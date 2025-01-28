@@ -16,6 +16,8 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 #include "includes/behaviours_homerow_mods.dtsi"
+#include "../zmk-helpers/include/zmk-helpers/key-labels/totem.h"
+
 
 #define BASE 0
 #define NUM  1
