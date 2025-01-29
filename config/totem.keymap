@@ -28,6 +28,7 @@
 #define SYM  2
 #define FN  3
 #define SYS 4
+#define MIS 5
 
 &mt {
   quick-tap-ms = <100>;
