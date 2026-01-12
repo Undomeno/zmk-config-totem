@@ -54,6 +54,58 @@
                 , <&macro_tap &kp G &kp I &kp F>
                 ;
         };
+        mac_d1: macd1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp N1>, <&macro_release &kp LCTRL>;
+        };
+        mac_d2: mac_d2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp N2>, <&macro_release &kp LCTRL>;
+        };
+
+        mac_d3: mac_d3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp N3>, <&macro_release &kp LCTRL>;
+        };
+
+        mac_d4: mac_d4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp N4>, <&macro_release &kp LCTRL>;
+        };
+
+        mac_d5: mac_d5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp N5>, <&macro_release &kp LCTRL>;
+        };
+
+        mac_d6: mac_d6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp N6>, <&macro_release &kp LCTRL>;
+        };
+
+        mac_d7: mac_d7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp N7>, <&macro_release &kp LCTRL>;
+        };
+
+        mac_d8: mac_d8 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp N8>, <&macro_release &kp LCTRL>;
+        };
+
+        mac_d9: mac_d9 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp N9>, <&macro_release &kp LCTRL>;
+        };
     };
 
         keymap {
@@ -79,7 +131,7 @@ label= "BASE"                              ;
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
 &hm_l LCTRL A  &hm_l LALT S  &hm_l LGUI D   &hm_shift_l LSHFT F &kp G   &kp H  &hm_shift_r RSHFT J &hm_r RGUI K      &hm_r RALT L       &hm_r RCTRL SEMI
     &kp TAB       &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp BSPC
-                              &kp LSHFT   &lt FN ESC   &lt NUM SPACE       &lt SYM SPC   &lt SYS RET   &lt MIS DEL
+                              &kp TAB   &lt FN ESC   &lt NUM SPACE       &lt SYM SPC   &lt SYS RET   &lt MIS LSHIFT
                         >;
                 };
 
@@ -104,7 +156,7 @@ label= "NUM"                              ;
 
                 &kp N1   &kp N2    &kp N3    &kp N4     &kp N5   &kp LBKT  &kp RBKT &kp BSLH &kp MINUS &kp EQUAL
                 &kp N6   &kp N7    &kp N8    &kp N9     &kp N0   &trans    &trans   &trans   &trans    &kp SQT
-      &kp TAB   &trans  &trans   &trans   &trans    &trans  &trans    &trans   &trans   &trans    &kp GRAVE   &kp BSPC
+      &kp TAB   &mac_d1  &mac_d2   &mac_d3   &mac_d4    &mac_d5  &trans    &trans   &trans   &trans    &kp GRAVE   &kp BSPC
                 &trans      &trans      &trans      &trans &trans  &trans
                         >;
                 };
@@ -130,7 +182,7 @@ label= "SYM"                               ;
 
                 &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp LBRC  &kp RBRC &kp PIPE &kp UNDER &kp PLUS
                 &kp CARET   &kp AMPS    &kp ASTRK   &kp LPAR    &kp RPAR        &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp DQT
-      &kp TAB   &trans  &trans   &trans   &trans    &trans  &trans    &trans   &trans   &trans    &kp TILDE   &kp BSPC
+      &kp TAB   &trans  &trans   &trans   &trans    &trans  &mac_d6    &mac_d7   &mac_d8   &mac_d9    &kp TILDE   &kp BSPC
                 &trans      &trans      &trans      &trans &trans  &trans
                         >;
                 };
